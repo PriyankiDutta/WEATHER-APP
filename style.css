@@ -1,0 +1,84 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100VH;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-position: center;
+  background: rgba(0, 0, 0, 0.7) url('https://source.unsplash.com/1600x900/?landscape');
+    background-size: cover;
+    /*background-blend-mode: darken;*/
+
+}
+.card {
+  background: #a59696d0;
+  color: white;
+  padding: 2em;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search{
+    padding: 5px;
+    text-align: justify;
+    font-size: 20;
+    border: solid white ;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.searchbar{
+
+    justify-content: center;
+     
+     margin: 15px;
+     padding: 8px;
+     flex-direction: row; 
+   
+}
+.weather{
+
+    
+    justify-content: center;
+   align-items: center;
+     margin:auto;
+     flex-direction: row; 
+   
+
+}
+.city{
+  font-size: 40px;
+  text-justify: distribute-all-lines;
+}
+.temp{
+
+  justify-content: center;
+  text-transform: capitalize;
+  display: flex;
+  font-size: 30px;
+}
+.humidity,.wind,.description{
+  font-size: 20px;
+  justify-content: center;
+  text-transform: capitalize;
+ 
+}
+
+.weather.loading
+{
+  visibility: hidden;
+}
+.weather.loading.after{
+
+  visibility:visible;
+  content: "Loading...";
+  color: white;
+}
